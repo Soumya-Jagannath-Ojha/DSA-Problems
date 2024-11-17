@@ -1,3 +1,4 @@
+package Array;
 public class MoveAllZeroes {
 
     public static void pushZerosToEnd(int[] arr) {
