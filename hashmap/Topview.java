@@ -46,12 +46,13 @@ public class Topview {
                 }
             }else{
                 // 1st time node is added to map
-                if(!map.containsKey(curr.hd)){
-                    // System.out.print(curr.hd+ " ");
-                    // System.out.print("values are: ");
-                    // System.out.print(curr.node.data+ " ");
-                    map.put(curr.hd,curr.node);
-                }
+                // if(!map.containsKey(curr.hd)){
+                //     // System.out.print(curr.hd+ " ");
+                //     // System.out.print("values are: ");
+                //     // System.out.print(curr.node.data+ " ");
+                //     map.put(curr.hd,curr.node);
+                // }
+                map.put(curr.hd, curr.node);
                 // Traverse to left add to the map
                 if(curr.node.left != null){
                     q.add(new Info(curr.node.left,curr.hd-1));

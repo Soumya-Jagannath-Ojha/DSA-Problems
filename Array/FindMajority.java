@@ -44,5 +44,16 @@ public class FindMajority {
     public static void main(String[] args) {
         int arr[] = {2, 1, 5, 5, 5, 5, 6, 6, 6, 6, 6};
         findMajority(arr);
+
+        ArrayList<Integer> path = new ArrayList<>();
+        path.add(1);
+        path.add(2);
+        path.add(3);
+        path.add(4);
+        System.out.println(path);
+        path.remove(3);
+        System.out.println(path);
+        System.out.println(path.get(2));
+
     }
 }
